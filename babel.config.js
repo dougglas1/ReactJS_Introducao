@@ -3,5 +3,8 @@ module.exports = {
   presets: [
     "@babel/preset-env", // Importa / altera os pacotes que o navegador não entende
     "@babel/preset-react" // Transforma o que o navegador não entender do React
+  ],
+  plugins: [
+    '@babel/plugin-proposal-class-properties'
   ]
 };

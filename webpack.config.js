@@ -23,6 +23,9 @@ module.exports = {
           { loader: 'style-loader' },
           { loader: 'css-loader' }, // Permitir importar arquivos dentro do CSS (imagem, fontes, etc)
         ]
+      }, {
+        test: /.*\.(gif|png|jpe?g)$/i, // ? diz que pode ter E (jpg ou jpeg) o I é case sensitive
+        use: { loader: 'file-loader' }
       }
     ]
   }
